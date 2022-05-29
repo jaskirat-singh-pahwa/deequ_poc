@@ -9,13 +9,16 @@ from src.generic.rules import GenericRules
 
 def main(argv) -> None:
     args = parse_args(argv)
-    print(args["claims_data_path"])
+    print(args["constraints_path"])
+    print(args["data_path"])
 
     spark: SparkSession = get_spark()
-    df = convert_excel_sheets_to_csv_files(spark=spark, excel_file_path=args["claims_data_path"], sheets=["Rx Fact"])
 
-    generic_rules = GenericRules(spark=spark, df=df)
-    print(generic_rules.is_complete(column_name="WEEK_END_FRI"))
+    df = convert_excel_sheets_to_csv_files(spark=spark, excel_file_path=args["claims_data_path"], sheets=sheets)
+
+    # generic_rules = GenericRules(spark=spark, df=df)
+    # print(generic_rules.testing(column_name="_c0"))
+    print(spark.sparkContext.getConf().getAll())
 
     spark.stop()
 
