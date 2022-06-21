@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/iqvia_deequ.iml" filepath="$PROJECT_DIR$/.idea/iqvia_deequ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/data-quality.iml" filepath="$PROJECT_DIR$/.idea/data-quality.iml" />
     </modules>
   </component>
 </project>

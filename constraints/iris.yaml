@@ -1,0 +1,10 @@
+version: 0.1
+dq_framework: Deequ
+
+
+dq_config:
+  dataset:
+    s3_bucket: jaskirat-deequ-poc
+    s3_key: dataset/public/
+    s3_path: s3://jaskirat-deequ-poc/dataset/public/year=2022/month=06/day=16/
+    dq_suggestions: true
