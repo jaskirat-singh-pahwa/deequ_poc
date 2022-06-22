@@ -5,10 +5,11 @@ name = "pypi"
 
 [packages]
 numpy="*"
-pandas ="*"
+pandas="*"
 pyspark="*"
 pydeequ="*"
-pyyaml = "*"
+pyyaml="*"
+pyspark-stubs = "==3.0.0.post3"
 
 [dev-packages]
 
