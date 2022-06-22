@@ -28,7 +28,7 @@ class DataWriter:
         pass
 
     def write_data(self):
-        if len(self.config) != 0:
+        if len(self.config) != 0 and self.config["destination"].lower() == "s3":
             self.write_dataframe_to_s3()
         else:
             print("No configuration for writing data")

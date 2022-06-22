@@ -29,8 +29,8 @@ def main(argv) -> None:
 
     runner = Runner(
         spark=spark,
-        config_file_bucket=config_file_bucket,
-        config_file_key=config_file_key
+        config_bucket=config_file_bucket,
+        config_key=config_file_key
     )
     runner.run_data_quality()
 
